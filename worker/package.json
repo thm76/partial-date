@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Partial Date Inputs POC",
+  "main": "index.js",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.1.3"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "partial-date",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build:spa": "vite build --emptyOutDir",
+    "build:worker": "node build-worker.js",
+    "build": "npm run build:spa && npm run build:worker",
+    "publish:cf": "wrangler publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cloudflare/kv-asset-handler": "^0.1.3",
+    "esbuild": "^0.13.6",
+    "prettier": "^2.4.1",
+    "vite": "^2.6.7",
+    "vite-plugin-solid": "^2.1.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.25.0",
+    "solid-js": "^1.1.6",
+    "solid-styled-components": "^0.27.3",
+    "uuid": "^8.3.2"
+  }
+}
