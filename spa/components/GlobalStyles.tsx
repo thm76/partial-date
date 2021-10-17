@@ -5,7 +5,7 @@ export const NarrowWidth = 600;
 export const GlobalStyles = createGlobalStyles`
   :root {
     --page-background: hsl(0, 0%, 95%);
-    --page-color: hsl(0, 0%, 100%);
+    --page-color: hsl(0, 0%, 0%);
 
     --option-background: hsl(0, 0%, 98%);
     --option-divider-color: hsl(0, 0%, 90%);
