@@ -9,6 +9,7 @@ import { PartialDate } from "../models/PartialDate";
 import { DateInputCombinedWithCheckbox } from "../options/DateInputCombinedWithCheckbox";
 import { DateInputSeparate } from "../options/DateInputSeparate";
 import { DateInputSeparateWithCheckbox } from "../options/DateInputSeparateWithCheckbox";
+import { DateInputSwitcheroo } from "../options/DateInputSwitcheroo";
 
 export const App: Component = () => {
   const [date, setDate] = createSignal<PartialDate>();
@@ -31,16 +32,16 @@ export const App: Component = () => {
             />
           </Field>
         </Option>
-        <Option title="Single field (no partial dates)">
-          <Field>
-            <Label>Date</Label>
-            <DateInputCombined
-              date={date}
-              setDate={setDate}
-              allowsPartial={false}
-            />
-          </Field>
-        </Option>
+        {/*<Option title="Single field (no partial dates)">*/}
+        {/*  <Field>*/}
+        {/*    <Label>Date</Label>*/}
+        {/*    <DateInputCombined*/}
+        {/*      date={date}*/}
+        {/*      setDate={setDate}*/}
+        {/*      allowsPartial={false}*/}
+        {/*    />*/}
+        {/*  </Field>*/}
+        {/*</Option>*/}
         <Option title="Single field with checkbox">
           <Field>
             <Label>Date</Label>
@@ -61,6 +62,12 @@ export const App: Component = () => {
           <Field>
             <Label>Date</Label>
             <DateInputSeparateWithCheckbox date={date} setDate={setDate} />
+          </Field>
+        </Option>
+        <Option title="Switching between combined and separate">
+          <Field>
+            <Label>Date</Label>
+            <DateInputSwitcheroo date={date} setDate={setDate} />
           </Field>
         </Option>
       </OptionList>

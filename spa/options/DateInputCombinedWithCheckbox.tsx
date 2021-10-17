@@ -14,7 +14,7 @@ export const DateInputCombinedWithCheckbox: Component<DateInputProps> = (
         id={id}
         type="checkbox"
         checked={allowsPartial()}
-        onChange={(e) => setAllowsPartial((prev) => !prev)}
+        onChange={() => setAllowsPartial((prev) => !prev)}
       />
       <label for={id}>Partial date</label>
     </DateInputCombined>
