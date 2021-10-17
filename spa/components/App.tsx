@@ -64,7 +64,7 @@ export const App: Component = () => {
             <DateInputSeparateWithCheckbox date={date} setDate={setDate} />
           </Field>
         </Option>
-        <Option title="Switching between combined and separate">
+        <Option title="Switching between single and separate fields">
           <Field>
             <Label>Date</Label>
             <DateInputSwitcheroo date={date} setDate={setDate} />
