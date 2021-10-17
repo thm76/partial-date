@@ -48,6 +48,7 @@ export const Input = styled("input")`
   &:active {
     outline: var(--outline-color) solid 2px;
     outline-offset: 1px;
+    color: var(--input-color--active);
     background: var(--input-background--active);
 
     &[aria-invalid="true"] {
